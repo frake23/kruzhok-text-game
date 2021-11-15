@@ -21,7 +21,7 @@ export default function TestPage() {
                 caseIndex = parseInt(lcIndex)
             else
                 navigate('/');
-        } else localStorage.getItem('caseIndex');
+        } else localStorage.setItem('caseIndex', caseIndex.toString());
         setCase(cases[caseIndex]);
         setData(mockData);
     }, []);
