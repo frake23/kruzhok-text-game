@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: SourceSansPro;
+    font-weight: normal;
+    src: url("./assets/fonts/SourceSansPro-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    font-weight: 600;
+    src: url("./assets/fonts/SourceSansPro-SemiBold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: SourceSansPro;
+    font-weight: bold;
+    src: url("./assets/fonts/SourceSansPro-Bold.ttf") format('truetype');
+}
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+html {
+    scroll-behavior: smooth;
+}
