@@ -15,16 +15,17 @@ export default function TestPage() {
     const [answers, setAnswers] = useState<number[]>([]);
 
     useEffect(() => {
-        if (caseIndex === null) {
+        let csIndex = caseIndex;
+        if (caseIndex == null) {
             const lcIndex = localStorage.getItem('caseIndex')
-            if (lcIndex)
-                caseIndex = parseInt(lcIndex)
+            if (lcIndex !== null)
+                csIndex = parseInt(lcIndex)
             else {
                 navigate('/');
                 return;
             }
         } else localStorage.setItem('caseIndex', caseIndex.toString());
-        setCase(cases[caseIndex]);
+        setCase(cases[csIndex]);
         setData(mockData);
     }, []);
 
