@@ -19,8 +19,10 @@ export default function TestPage() {
             const lcIndex = localStorage.getItem('caseIndex')
             if (lcIndex)
                 caseIndex = parseInt(lcIndex)
-            else
+            else {
                 navigate('/');
+                return;
+            }
         } else localStorage.setItem('caseIndex', caseIndex.toString());
         setCase(cases[caseIndex]);
         setData(mockData);
