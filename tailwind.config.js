@@ -14,14 +14,18 @@ module.exports = {
         secondary: '#ECECEC'
       },
       black: '#0f0f0f',
-      blue: '#0D42FF',
+      blue: {
+        DEFAULT: '#0D42FF',
+        secondary: '#4AA0BA'
+      },
       red: '#D56E72',
       violet: '#8A77CB',
       gray: {
         100: '#A1A1A1',
         200: '#858484',
         300: '#3F3F3F'
-      }
+      },
+      emerald: '#4AA0BA'
     },
     container: {
       center: true,

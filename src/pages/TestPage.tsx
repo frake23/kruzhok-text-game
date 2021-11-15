@@ -16,7 +16,7 @@ export default function TestPage() {
 
     useEffect(() => {
         let csIndex = caseIndex;
-        if (caseIndex == null) {
+        if (caseIndex === null) {
             const lcIndex = localStorage.getItem('caseIndex')
             if (lcIndex !== null)
                 csIndex = parseInt(lcIndex)
@@ -48,7 +48,7 @@ export default function TestPage() {
                             question={q} 
                             questionsCount={data.length} 
                             onSubmit={onAnswerSubmit}
-                            key={q.question}
+                            key={`${q.number}/${q.question}`}
                             darkened={i === answers.length || answers.length === data.length}
                         />
                     )}
@@ -176,5 +176,5 @@ const mockData = [
                 }
             }
         ]
-    }
+    },
 ]

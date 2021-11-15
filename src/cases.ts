@@ -10,5 +10,9 @@ export const cases = [
     {
         name: 'Среда доступных возможностей',
         colorClass: 'bg-violet'
+    },
+    {
+        name: 'Профориентация молодых людей',
+        colorClass: 'bg-blue-secondary'
     }
 ]
