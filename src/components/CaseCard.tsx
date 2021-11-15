@@ -11,8 +11,8 @@ const CaseCard: React.FC<CaseCardProps> = ({text, colorClass, selected, onClick}
     return (
         <div
             className={`
-                transition-all
                 w-64 h-64 p-3
+                transition-all
                 ${colorClass}${selected ? ' border-2 border-white' : ''}
                 flex items-end  flex-shrink-0
                 font-semibold text-1.5xl
