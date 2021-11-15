@@ -27,7 +27,6 @@ export default function TestPage() {
     }, []);
 
     useEffect(() => {
-        console.log(answers)
         localStorage.setItem('answers', JSON.stringify(answers));
     }, [answers]);
 
