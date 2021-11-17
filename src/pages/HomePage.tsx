@@ -2,11 +2,8 @@ import React from 'react';
 import Header from "../components/Header";
 import PageLayout from "../components/PageLayout";
 import CaseSelect from "../components/CaseSelect";
-import useScrollToTop from '../hooks/useScrollToTop';
 
 export default function HomePage() {
-    useScrollToTop();
-    
     return (
         <PageLayout>
             <Header/>
