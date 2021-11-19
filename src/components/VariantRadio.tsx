@@ -10,7 +10,7 @@ interface VariantRadioProps {
 const VariantRadio: React.FC<VariantRadioProps> = ({variant, selected, onClick, disabled}) => {
     return (
         <div className="flex mb-5 cursor-pointer" onClick={disabled ? undefined : onClick}>
-            <div className="w-4 h-4 rounded-full border-2 border-white-secondary mr-3 flex-shrink-0 flex items-center justify-center">
+            <div className="mt-1 w-4 h-4 rounded-full border border-white-secondary mr-3 flex-shrink-0 flex items-center justify-center">
                 {selected && <div className="w-2 h-2 bg-white-secondary rounded-full"/>}
             </div>
             <div className="flex flex-col">
